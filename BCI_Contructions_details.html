@@ -2,16 +2,42 @@
 <html lang="en">
     <!--<< Header Area >>-->
     <head>
+        
         <!-- ========== Meta Tags ========== -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="modinatheme">
-        <meta name="description" content="Agron - Agriculture & Organic Farm HTML Template">
+
+        <title>{{ service.meta_title|default:service.title|add:" | BCI Construction" }}</title>
+
+        <meta name="author" content="Build Const Industries & Agro Pvt. Ltd.">
+
+        <meta name="description" content="{{ service.meta_description|default:service.short_description }}">
+
+        <meta name="robots" content="index, follow">
+
+        <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+
+        <!-- ========== Open Graph Meta Tags ========== -->
+        <meta property="og:type" content="website">
+
+        <meta property="og:title" content="{{ service.meta_title|default:service.title|add:" | BCI Construction" }}">
+
+        <meta property="og:description" content="{{ service.meta_description|default:service.short_description }}">
+
+        <meta property="og:url" content="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+
+        <meta property="og:site_name" content="Build Const Industries & Agro Pvt. Ltd.">
+
+        {% if service.image %}
+        <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ service.image.url }}">
+        {% endif %}
+
+
         <!-- ======== Page title ============ -->
         <title>Build Const Industries & Agro Pvt Ltd</title>
         <!--<< Favicon >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <link rel="shortcut icon" href="assets/img/logo_bg_removed.png">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< Font Awesome.css >>-->
@@ -279,22 +305,20 @@
                             <div class="blog-post-details border-wrap mt-0">
                                 <div class="single-blog-post post-details mt-0">
                                     <div class="post-content pt-0">
-                                        <h2 class="mt-0 text-anim">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatibus?</h2>
-                                        <div class="post-meta mt-3 wow fadeInUp" data-wow-delay=".2s">
-                                            <span><i class="fal fa-user"></i>Shikhon .Ha</span>
-                                            
-                                            <span><i class="fal fa-calendar-alt"></i>4th February 2024</span>
-                                        </div>
+                                        <h2 class="mt-0 text-anim mb-3">RCC Foundation Work | Strong Foundations for Safe & Durable Structures</h2>
+                                        
                                         <p class="wow fadeInUp" data-wow-delay=".3s">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga rem eveniet, repudiandae ipsa ut molestias reprehenderit unde, aliquam iure modi eaque quidem. Rem ut suscipit nesciunt, expedita omnis, qui ipsam saepe sunt numquam esse, voluptate laborum? Commodi soluta natus, inventore reprehenderit perspiciatis ut dolore cum doloribus? Cum dolorem tenetur dignissimos!
+                                            BCI provides professional RCC foundation solutions for residential, commercial and other building requirements, focusing on proper structural preparation, quality materials and dependable construction practices.
                                         </p>
                                         <p class="wow fadeInUp" data-wow-delay=".4s">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum perspiciatis dolorum ipsam quasi, corrupti hic eum eveniet culpa a iste, voluptatum enim. Impedit illo incidunt laudantium ullam ipsum nesciunt?
+                                            A strong foundation is essential for building safety and longevity. Our foundation services include proper soil testing, excavation, concrete work, structural reinforcement and waterproofing—all carried out according to architectural plans and industry standards.
                                         </p>
-                                        <img src="assets/img/inner-page/news/news-details-01.jpg" alt="blog__img" class="single-post-image wow fadeInUp" data-wow-delay=".5s">
-                                        <h2 class="text-anim">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, reiciendis eveniet.</h2>
+                                        <img src="assets/img/client-provited/Commercial Building Construction.jpeg" alt="blog__img" class="single-post-image wow fadeInUp" data-wow-delay=".5s">
+                                        <h2 class="text-anim">RCC foundation work is one of the most important stages of any building project, providing the structural base required for strength, stability and long-term durability.</h2>
                                         <p class="mt-2 wow fadeInUp" data-wow-delay=".6s">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima error sint eos optio dolorem. Fugiat corporis rem quia ex cumque aut, sit dignissimos, quisquam quae id tenetur aliquid? Tenetur sequi dicta sunt, voluptates, iste enim unde possimus voluptate eveniet aliquid earum. Deleniti veritatis recusandae omnis temporibus eaque officia veniam dicta nulla dolorem sapiente, voluptates, quasi mollitia porro voluptatem iure natus explicabo, labore at nostrum ut autem corporis possimus provident adipisci! Nam, libero! Repudiandae, corrupti laboriosam. Totam maxime temporibus delectus, rerum fugiat, mollitia perferendis similique aliquam voluptatibus nihil beatae perspiciatis, magni odit tempora autem amet. Nemo enim minus ab eaque debitis?
+                                            BCI Construction provides RCC foundation solutions for residential, commercial and other building requirements. Our approach focuses on proper construction practices, concrete and reinforcement work, structural requirements and dependable execution.
+From initial project requirements through construction, we aim to provide a professional and organized approach to foundation work while maintaining focus on quality, durability and practical project requirements.
+Whether it is a residential building, commercial structure or other construction requirement, BCI works to deliver reliable foundation solutions suited to the project.
                                         </p>
                                         
                                     </div>
@@ -324,40 +348,7 @@
                         <div class="col-12 col-lg-4 wow fadeInUp">
                             <div class="main-sidebar sticky-style">
                                 
-                                <div class="single-sidebar-widget">
-                                    <div class="wid-title wow fadeInUp" data-wow-delay=".4s">
-                                        <h3>Recent Guidelines</h3>
-                                    </div>
-                                    <div class="popular-posts">
-                                        <div class="single-post-item wow fadeInUp" data-wow-delay=".3s">
-                                            <div class="thumb bg-cover" style="background-image: url('assets/img/inner-page/news/news-sm-01.jpg');"></div>
-                                            <div class="post-content">
-                                                <h5><a href="BCI_Contructions_details.html">Smart About Packaging, Product Design</a></h5>
-                                                <div class="post-date">
-                                                    <i class="far fa-calendar"></i>29 August, 2025
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-post-item wow fadeInUp" data-wow-delay=".5s">
-                                            <div class="thumb bg-cover" style="background-image: url('assets/img/inner-page/news/news-sm-02.jpg');"></div>
-                                            <div class="post-content">
-                                                <h5><a href="BCI_Contructions_details.html">Drivers Deliver Much More Than Products</a></h5>
-                                                <div class="post-date">
-                                                    <i class="far fa-calendar"></i>29 August, 2025
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-post-item wow fadeInUp" data-wow-delay=".7s">
-                                            <div class="thumb bg-cover" style="background-image: url('assets/img/inner-page/news/news-sm-03.jpg');"></div>
-                                            <div class="post-content">
-                                                <h5><a href="BCI_Contructions_details.html">Tips to Lowering Freight Shipping Costs</a></h5>
-                                                <div class="post-date">
-                                                    <i class="far fa-calendar"></i>29 August, 2025
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <div class="single-sidebar-widget">
                                     <div class="wid-title wow fadeInUp" data-wow-delay=".2s">
                                         <h3>Catagories</h3>

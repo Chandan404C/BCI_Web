@@ -1,37 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--<< Header Area >>-->
-    <head>
-        <!-- ========== Meta Tags ========== -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="modinatheme">
-        <meta name="description" content="Agron - Agriculture & Organic Farm HTML Template">
-        <!-- ======== Page title ============ -->
-        <title>Build Const Industries & Agro Pvt Ltd</title>
-        <!--<< Favicon >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
-        <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<< Font Awesome.css >>-->
-        <link rel="stylesheet" href="assets/css/font-awesome.css">
-        <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Odometer.css >>-->
-        <link rel="stylesheet" href="assets/css/odometer.css">
-        <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
-    </head>
-    <body>
+<!--<< Header Area >>-->
+
+<head>
+
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ product.meta_title|default:product.title|add:" | BCI Agro" }}</title>
+
+    <meta name="author" content="Build Const Industries & Agro Pvt. Ltd.">
+
+    <meta name="description" content="{{ product.meta_description|default:product.short_description }}">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+
+    <!-- ========== Open Graph Meta Tags ========== -->
+    <meta property="og:type" content="product">
+
+    <meta property="og:title" content="{{ product.meta_title|default:product.title|add:" | BCI Agro" }}">
+
+    <meta property="og:description" content="{{ product.meta_description|default:product.short_description }}">
+
+    <meta property="og:url" content="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+
+    <meta property="og:site_name" content="Build Const Industries & Agro Pvt. Ltd.">
+
+    
+    <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ product.image.url }}">
+ 
+
+
+    <!-- ======== Page title ============ -->
+    <title>Build Const Industries & Agro Pvt Ltd</title>
+    <!--<< Favicon >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< Font Awesome.css >>-->
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Odometer.css >>-->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
 
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
@@ -229,7 +257,7 @@
                                 </nav>
                             </div>
                         </div>
-                        
+
                         <a href="contact.html" class="theme-btn">
                             Let’s Talk
                             <i class="far fa-arrow-right"></i>
@@ -249,91 +277,99 @@
         </div>
     </header>
 
-         <!-- Breadcrumb Section Start -->
-        <section class="breadcrumb-wrapper bg-cover fix" style="background-image: url(assets/img/inner-page/breadcroumb.jpg);">
-            <div class="shape-1 float-bob-y">
-                <img src="assets/img/inner-page/shape-1.png" alt="img">
+    <!-- Breadcrumb Section Start -->
+    <section class="breadcrumb-wrapper bg-cover fix"
+        style="background-image: url(assets/img/inner-page/breadcroumb.jpg);">
+        <div class="shape-1 float-bob-y">
+            <img src="assets/img/inner-page/shape-1.png" alt="img">
+        </div>
+        <div class="shape-2 float-bob-x">
+            <img src="assets/img/inner-page/shape-2.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="page-heading">
+                <ul class="breadcrumb-list wow fadeInUp">
+                    <li>Home</li>
+                    <li>//</li>
+                    <li>Product Details</li>
+                </ul>
+                <h1 class="breadcrumb-title text-anim">Product Details</h1>
             </div>
-            <div class="shape-2 float-bob-x">
-                <img src="assets/img/inner-page/shape-2.png" alt="img">
-            </div>
-            <div class="container">
-                <div class="page-heading">
-                    <ul class="breadcrumb-list wow fadeInUp">
-                        <li>Home</li>
-                        <li>//</li>
-                        <li>Product Details</li>
-                    </ul>
-                    <h1 class="breadcrumb-title text-anim">Product Details</h1>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-         <!-- shop Section Start -->
-        <section class="shop-details-section section-padding">
-            <div class="container">
-                <div class="shop-details-wrapper">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="shop-details-image">
+    <!-- shop Section Start -->
+    <section class="shop-details-section section-padding">
+        <div class="container">
+            <div class="shop-details-wrapper">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="shop-details-image">
                             <div class="tab-content">
                                 <div id="thumb1" class="tab-pane fade show active">
                                     <div class="shop-thumb">
-                                        <img src="assets/img/inner-page/shop/shop-details-01.jpg" alt="img">
+                                        <img src="assets/img/client-provited/basmoti rice 2.jpeg" alt="img">
                                     </div>
                                 </div>
                                 <div id="thumb2" class="tab-pane fade">
                                     <div class="shop-thumb">
-                                        <img src="assets/img/inner-page/shop/shop-details-01.jpg" alt="img">
+                                        <img src="assets/img/client-provited/all rice.jpeg" alt="img">
                                     </div>
                                 </div>
                                 <div id="thumb3" class="tab-pane fade">
                                     <div class="shop-thumb">
-                                        <img src="assets/img/inner-page/shop/shop-details-01.jpg" alt="img">
+                                        <img src="assets/img/client-provited/basmoti rice 2.jpeg" alt="img">
                                     </div>
                                 </div>
-                                </div>
-                                <ul class="nav mb-5">
-                                    <li class="nav-item">
-                                        <a href="#thumb1" data-bs-toggle="tab" class="nav-link ps-0 active">
-                                            <img src="assets/img/inner-page/shop/shop-details-02.jpg" alt="img">
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#thumb2" data-bs-toggle="tab" class="nav-link">
-                                           <img src="assets/img/inner-page/shop/shop-details-03.jpg" alt="img">
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#thumb3" data-bs-toggle="tab" class="nav-link">
-                                            <img src="assets/img/inner-page/shop/shop-details-04.jpg" alt="img">
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
+                            <ul class="nav mb-5">
+                                <li class="nav-item">
+                                    <a href="#thumb1" data-bs-toggle="tab" class="nav-link ps-0 active">
+                                        <img src="assets/img/client-provited/basmoti rice 2.jpeg" alt="img">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#thumb2" data-bs-toggle="tab" class="nav-link">
+                                        <img src="assets/img/client-provited/all rice.jpeg" alt="img">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#thumb3" data-bs-toggle="tab" class="nav-link">
+                                        <img src="assets/img/client-provited/basmoti rice 2.jpeg" alt="img">
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-lg-7">
-                            <div class="product-details-content">
-                            <!-- <div class="star pb-3 wow fadeInUp">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="product-details-content">
+                            <div class="star pb-3 wow fadeInUp">
                                 <a href="#"> <i class="fas fa-star"></i></a>
                                 <a href="#"><i class="fas fa-star"></i></a>
                                 <a href="#"> <i class="fas fa-star"></i></a>
                                 <a href="#"><i class="fas fa-star"></i></a>
                                 <a href="#"><i class="fas fa-star"></i></a>
-                                <span>(02)</span>
-                            </div> -->
-                            <h2 class="pb-3 text-anim">BCI Premium Basmati Rice – Extra Long Grain | Aromatic | Premium Quality</h2>
+                                <span>(100)</span>
+                            </div>
+                            <h2 class="pb-3 text-anim">BCI Premium Basmati Rice – Extra Long Grain | Aromatic | Premium
+                                Quality</h2>
                             <p class="mb-3 wow fadeInUp" data-wow-delay=".2s">
-                               BCI Premium Basmati Rice is carefully selected to offer an excellent combination of extra-long grains, rich aroma, fluffy texture and premium taste. Designed for quality-conscious consumers and bulk buyers, our Basmati Rice is suitable for retail distribution, wholesale trading, hotels, restaurants, catering businesses and institutional requirements.
+                                BCI Premium Basmati Rice is carefully selected to offer an excellent combination of
+                                extra-long grains, rich aroma, fluffy texture and premium taste. Designed for
+                                quality-conscious consumers and bulk buyers, our Basmati Rice is suitable for retail
+                                distribution, wholesale trading, hotels, restaurants, catering businesses and
+                                institutional requirements.
 
-                                With its attractive 5 kg premium packaging, BCI Basmati Rice is positioned as a high-value product for distributors and trading partners looking to add a premium rice category to their portfolio.
+                                With its attractive 5 kg premium packaging, BCI Basmati Rice is positioned as a
+                                high-value product for distributors and trading partners looking to add a premium rice
+                                category to their portfolio.
                             </p>
 
-                             <div class="section-title mb-0">
+                            <div class="section-title mb-0">
                                 <span class=""><img src="assets/img/sub-title.svg" alt="img">Key Product Features</span>
-                               
+
                             </div>
-                                 <div class="row";>
+                            <div class="row" ;>
                                 <div class="col-6">
                                     <div class="list-items wow fadeInUp" data-wow-delay=".5s">
                                         <ul>
@@ -343,7 +379,7 @@
                                             </li>
                                             <li>
                                                 <i class="far fa-check"></i>
-                                               Rich and pleasant aroma
+                                                Rich and pleasant aroma
                                             </li>
                                             <li>
                                                 <i class="far fa-check"></i>
@@ -361,7 +397,7 @@
                                         </li>
                                         <li>
                                             <i class="far fa-check"></i>
-                                           Carefully selected grains
+                                            Carefully selected grains
                                         </li>
                                         <li>
                                             <i class="far fa-check"></i>
@@ -370,125 +406,174 @@
                                     </ul>
                                 </div>
                             </div>
-                                
-                                    
+
+
 
                             <div class="cart-quantity wow fadeInUp" data-wow-delay=".6s">
-                                
-                                <a href="BCI_agri_trading_details.html" class="shop-btn theme-btn">Contact Us</a>
+
+                                <a href="Bulk_enquiry.html" class="shop-btn theme-btn">Contact Us</a>
+                                <a href="Bulk_enquiry.html" class="shop-btn theme-btn">Whatsapp Enquiry</a>
                                 <div class="icon-item">
-                                    
+
                                     <a href="BCI_agri_trading_details.html" class="icon">
                                         <i class="far fa-share"></i>
                                     </a>
                                 </div>
                             </div>
-                            <h6 class="details-info"><span>Quantity:</span> <a href="BCI_agri_trading_details.html">124224</a></h6>
-                            <h6 class="details-info"><span>Categories:</span> <a href="BCI_agri_trading_details.html">Crux Indoor Fast and Easy</a></h6>
-                            
-                            </div>
+                            <h6 class="details-info"><span>Quantity:</span> <a href="BCI_agri_trading_details.html">5
+                                    kg</a></h6>
+                            <h6 class="details-info"><span>Categories:</span> <a
+                                    href="BCI_agri_trading_details.html">Premium Rice</a></h6>
+
                         </div>
                     </div>
-                    <div class="single-tab">
-                        <ul class="nav mb-5">
-                            <li class="nav-item">
+                </div>
+                <div class="single-tab">
+                    <ul class="nav mb-5">
+                        <li class="nav-item">
                             <a href="#description" data-bs-toggle="tab" class="nav-link ps-0 active">
                                 <h6>Description</h6>
                             </a>
-                            </li>
-                            <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a href="#additional" data-bs-toggle="tab" class="nav-link">
-                                <h6>Additional Information  </h6>
+                                <h6>Additional Information </h6>
                             </a>
-                            </li>
-                           
-                        </ul>
-                        <div class="tab-content">
-                            <div id="description" class="tab-pane fade show active">
+                        </li>
+
+                    </ul>
+                    <div class="tab-content">
+                        <div id="description" class="tab-pane fade show active">
                             <div class="description-items">
                                 <div class="description-content">
-                                    <h3>Product descriptions</h3>
+                                    <h3>Why Choose BCI Premium Basmati Rice?</h3>
                                     <p class="mb-4">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, saepe?
+                                        BCI Premium Basmati Rice is positioned as a premium rice product for
+                                        quality-conscious consumers and B2B buyers. Carefully selected extra-long grains
+                                        offer a rich aroma, fluffy texture after cooking and a premium eating
+                                        experience.
+                                        With attractive 5 kg premium packaging, the product is suitable for retail
+                                        distribution as well as wholesale and institutional requirements. BCI is
+                                        developing its agro-products business with a focus on quality sourcing,
+                                        professional packaging and dependable bulk supply.
+                                        The product is suitable for rice wholesalers, food-product distributors,
+                                        supermarket and retail chains, agro-product trading companies, institutional
+                                        buyers, hotels, restaurants, caterers, regional stockists and other commercial
+                                        buyers.
+                                        For larger requirements, BCI welcomes enquiries regarding bulk quantities,
+                                        regular supply, packaging requirements, delivery locations and commercial terms.
                                     </p>
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At possimus accusantium quos sapiente pariatur sit quidem rem minus error, suscipit porro quod voluptas aut, fugiat quis dolorem quisquam libero aperiam, iste est dolor? Ex incidunt eaque minus deleniti commodi dolor nisi minima vero aut! Error nisi tempore excepturi fuga? Recusandae!
-                                    </p>
+
                                 </div>
                             </div>
-                            </div>
-                            <div id="additional" class="tab-pane fade">
+                        </div>
+                        <div id="additional" class="tab-pane fade">
                             <div class="table-responsive mb-15">
                                 <table class="table table-bordered">
                                     <tbody>
                                         <tr>
-                                        <td>Weight</td>
-                                        <td>240 Ton</td>
+                                            <td>Product</td>
+                                            <td>Premium Basmati Rice</td>
                                         </tr>
                                         <tr>
-                                        <td>Dimensions</td>
-                                        <td>20 × 30 × 40 cm</td>
+                                            <td>Variety</td>
+                                            <td>Extra Long Grain</td>
                                         </tr>
                                         <tr>
-                                        <td>Colors</td>
-                                        <td>Black, Blue, Green</td>
+                                            <td>Category</td>
+                                            <td>Premium Rice</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Pack Size</td>
+                                            <td>5 kg, 10 kg, 15 kg</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Features</td>
+                                            <td>Aromatic, Long Grain, Fluffy Texture</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Application</td>
+                                            <td>Retail / Wholesale / Institutional</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Supply</td>
+                                            <td>Bulk & Regular B2B Orders</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Market</td>
+                                            <td>West Bengal / India</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Brand</td>
+                                            <td>BCI</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Manufacturer/Marketer</td>
+                                            <td>Build Const Industries & Agro Pvt. Ltd.</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            </div>
-                            
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-       
-
-        <!-- Gallery Section Start -->
-        <div class="gallery-section-4 section-padding fix pt-0 section-bg">
-            <div class="swiper gallery-slide">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="gallery-image-4">
-                            <img src="assets/img/home-4/gallery/gallery-01.jpg" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-image-4">
-                            <img src="assets/img/home-4/gallery/gallery-02.jpg" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-image-4">
-                            <img src="assets/img/home-4/gallery/gallery-03.jpg" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-image-4">
-                            <img src="assets/img/home-4/gallery/gallery-04.jpg" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-image-4">
-                            <img src="assets/img/home-4/gallery/gallery-05.jpg" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-image-4">
-                            <img src="assets/img/home-4/gallery/gallery-06.jpg" alt="img">
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Footer Section Start -->
+
+
+    <!-- Gallery Section Start -->
+    <div class="gallery-section-4 section-padding fix pt-0 section-bg">
+        <div class="swiper gallery-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-01.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-02.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-03.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-04.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-05.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-06.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section Start -->
     <footer class="footer-section style-2 section-padding bg-cover pb-0 mt-1"
         style="background-image: url('assets/img/home-1/footer-bg.jpg');">
         <div class="container">
-            
+
             <div class="footer-widget-wrapper">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-7 wow fadeInUp" data-wow-delay=".2s">
@@ -540,7 +625,7 @@
                                         <i class="far fa-chevron-double-right"></i> About Company
                                     </a>
                                 </li>
-                                
+
                                 <li>
                                     <a href="contact.html">
                                         <i class="far fa-chevron-double-right"></i> Contact Us
@@ -551,8 +636,8 @@
                                         <i class="far fa-chevron-double-right"></i> 24/7 Support
                                     </a>
                                 </li>
-                                
-                                
+
+
                             </ul>
                         </div>
                     </div>
@@ -625,7 +710,7 @@
                                                 Products</a></h4> -->
                                     </div>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -649,35 +734,36 @@
             </div>
         </div>
     </footer>
-        
 
-        <!--<< All JS Plugins >>-->
-        <script src="assets/js/jquery-3.7.1.min.js"></script>
-        <!--<< Bootstrap Js >>-->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!--<< Nice Select Js >>-->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!--<< Odometer Js >>-->
-        <script src="assets/js/odometer.min.js"></script>
-        <!--<< Appear Js >>-->
-        <script src="assets/js/jquery.appear.min.js"></script>
-        <!--<< Swiper Slider Js >>-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <!--<< MeanMenu Js >>-->
-        <script src="assets/js/jquery.meanmenu.min.js"></script>
-        <!--<< Magnific Popup Js >>-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!--<< Wow Animation Js >>-->
-        <script src="assets/js/wow.min.js"></script>
-        <!--<< Gsap Animation Js >>-->
-        <script src="assets/js/gsap.min.js"></script>
-        <!--<< ScrollTrigger Js >>-->
-        <script src="assets/js/ScrollTrigger.min.js"></script>
-        <!--<< SplitText Js >>-->
-        <script src="assets/js/SplitText.min.js"></script>
-        <!--<< splitType Js >>-->
-        <script src="assets/js/splitType.js"></script>
-        <!--<< Main.js >>-->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Odometer Js >>-->
+    <script src="assets/js/odometer.min.js"></script>
+    <!--<< Appear Js >>-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Gsap Animation Js >>-->
+    <script src="assets/js/gsap.min.js"></script>
+    <!--<< ScrollTrigger Js >>-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--<< SplitText Js >>-->
+    <script src="assets/js/SplitText.min.js"></script>
+    <!--<< splitType Js >>-->
+    <script src="assets/js/splitType.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Bulk Enquiry | Wholesale & B2B Supply | BCI Agro</title>
+
+        <meta name="author" content="Build Const Industries & Agro Pvt. Ltd.">
+
+        <meta name="description" content="Submit a bulk enquiry to BCI Agro for rice and agricultural products. Get wholesale pricing, MOQ, packaging and delivery information for your business requirements.">
+
+        <meta name="robots" content="index, follow">
+
+        <link rel="canonical" href="https://www.wbcagro.com/Bulk_enquiry.html">
+
+        <!-- ========== Open Graph Meta Tags ========== -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Bulk Enquiry | Wholesale & B2B Supply | BCI Agro">
+        <meta property="og:description" content="Send your bulk rice and agricultural product requirements to BCI Agro for wholesale pricing, MOQ and supply information.">
+        <meta property="og:url" content="https://www.wbcagro.com/Bulk_enquiry.html">
+        <meta property="og:site_name" content="Build Const Industries & Agro Pvt. Ltd.">
+    <!-- ======== Page title ============ -->
+    <title>Agron - Agriculture & Organic Farm HTML Template</title>
+    <!--<< Favicon >>-->
+    <link rel="shortcut icon" href="assets/img/logo_bg_removed.png">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< Font Awesome.css >>-->
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Odometer.css >>-->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Bulk Enquiry Select Dropdown Styles (match input fields) -->
+    <style>
+        /* ===== Native select fallback — match .form-clt input design ===== */
+        .contact-form-box .form-clt select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 100%;
+            line-height: 1;
+            padding: 20px 20px;
+            text-transform: capitalize;
+            color: var(--text);
+            border-radius: 4px;
+            border: 1px solid var(--white);
+            background-color: var(--white);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235C6672' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            background-size: 12px;
+            font-size: 16px;
+            font-family: "Plus Jakarta Sans", system-ui;
+            font-weight: 400;
+            cursor: pointer;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .contact-form-box .form-clt select:focus {
+            border-color: var(--theme-color);
+        }
+
+        .contact-form-box .form-clt select option {
+            padding: 10px;
+            color: var(--text);
+        }
+
+        /* ===== Nice-select overrides (when JS transforms the select) ===== */
+        .contact-form-box .form-clt .nice-select {
+            width: 100%;
+            height: auto;
+            line-height: 1;
+            padding: 20px 20px;
+            border-radius: 4px;
+            border: 1px solid var(--white);
+            background: var(--white);
+            color: var(--text);
+            text-transform: capitalize;
+            font-size: 16px;
+            font-family: "Plus Jakarta Sans", system-ui;
+            font-weight: 400;
+            float: none;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .contact-form-box .form-clt .nice-select .current {
+            color: var(--text);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        /* Arrow chevron positioning */
+        .contact-form-box .form-clt .nice-select:after {
+            right: 20px;
+            border-color: var(--text);
+        }
+
+        /* Hover / focus / open states */
+        .contact-form-box .form-clt .nice-select:hover,
+        .contact-form-box .form-clt .nice-select:active,
+        .contact-form-box .form-clt .nice-select.open,
+        .contact-form-box .form-clt .nice-select:focus {
+            border-color: var(--theme-color);
+        }
+
+        /* Dropdown list panel */
+        .contact-form-box .form-clt .nice-select .list {
+            width: 100%;
+            border-radius: 4px;
+            background: var(--white);
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+            margin-top: 2px;
+            max-height: 250px;
+            overflow-y: auto;
+            z-index: 99;
+        }
+
+        /* Individual option items */
+        .contact-form-box .form-clt .nice-select .option {
+            padding: 10px 20px;
+            line-height: 1.5;
+            min-height: auto;
+            font-size: 15px;
+            color: var(--text);
+            text-transform: capitalize;
+            transition: all 0.2s ease;
+        }
+
+        .contact-form-box .form-clt .nice-select .option:hover,
+        .contact-form-box .form-clt .nice-select .option.focus {
+            background-color: var(--bg);
+            color: var(--theme-color);
+        }
+
+        .contact-form-box .form-clt .nice-select .option.selected {
+            font-weight: 600;
+            color: var(--theme-color);
+        }
+
+        .contact-form-box .form-clt .nice-select .option.disabled {
+            color: #999;
+        }
+
+        /* Scrollbar styling for the dropdown */
+        .contact-form-box .form-clt .nice-select .list::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .contact-form-box .form-clt .nice-select .list::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .contact-form-box .form-clt .nice-select .list::-webkit-scrollbar-thumb {
+            background: var(--theme-color);
+            border-radius: 4px;
+        }
+
+        /* ===== Blockquote for Bulk Enquiry section (replicate News Details design) ===== */
+        .gallery-section blockquote,
+        .gallery-section .wp-block-quote {
+            background-color: var(--theme-color);
+            color: var(--white);
+            font-size: 26px;
+            line-height: 1.4;
+            font-family: "Nunito", sans-serif;
+            font-weight: 400;
+            padding: 60px;
+            text-align: center;
+            margin: 40px 0px;
+            position: relative;
+            z-index: 1;
+            border-radius: 6px;
+        }
+
+        .gallery-section blockquote a,
+        .gallery-section .wp-block-quote a {
+            color: var(--white);
+        }
+
+        .gallery-section blockquote a:hover,
+        .gallery-section .wp-block-quote a:hover {
+            color: var(--text);
+        }
+
+        @media (max-width: 767px) {
+
+            .gallery-section blockquote,
+            .gallery-section .wp-block-quote {
+                padding: 30px 15px;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+
+        .gallery-section blockquote::before,
+        .gallery-section .wp-block-quote::before {
+            right: 30px;
+            font-size: 110px;
+            line-height: 1;
+            font-family: "Font Awesome 5 Pro";
+            position: absolute;
+            content: "\f10d";
+            bottom: -20px;
+            color: var(--white);
+            z-index: -1;
+            opacity: 0.1;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="B" class="letters-loading">
+                    B
+                </span>
+                <span data-text-preloader="C" class="letters-loading">
+                    C
+                </span>
+                <span data-text-preloader="I" class="letters-loading">
+                    I
+                </span>
+                <span data-text-preloader="P" class="letters-loading">
+                    P
+                </span>
+                <span data-text-preloader="V" class="letters-loading">
+                    V
+                </span>
+                <span data-text-preloader="T" class="letters-loading">
+                    T
+                </span>
+                <span data-text-preloader="." class="letters-loading">
+                    .
+                </span>
+                <span data-text-preloader="L" class="letters-loading">
+                    L
+                </span>
+                <span data-text-preloader="T" class="letters-loading">
+                    T
+                </span>
+                <span data-text-preloader="D" class="letters-loading">
+                    D
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="far fa-arrow-up"></i>
+    </button>
+
+    <!-- MouseCursor Start -->
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo_bg_removed.png" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="offcanvas-title">Hello There!</h3>
+                    <p>BUILDING BETTER TOMORROW</p>
+                    <div class="mobile-menu fix mt-15"></div>
+                    <div class="social-icon d-flex align-items-center">
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="offcanvas__contact">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <div class="icon">
+                                    <i class="far fa-phone-alt"></i>
+                                </div>
+                                <div class="content">
+                                    <p>Call Us</p>
+                                    <h4><a href="tel:+917578059104">+91 75780 59104</a></h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="content">
+                                    <p>Send Email</p>
+                                    <h4><a href="mailto:info@wbcagro.com">info@wbcagro.com</a></h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="content">
+                                    <p>Kolkata Office</p>
+                                    <h4>
+                                        Rajarhat–700157, West Bengal, India
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="theme-btn">
+                        Let’s Talk
+                        <i class="far fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header id="header-sticky" class="header-2">
+        <div class="container">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <a href="index.html" class="header-logo">
+                        <img src="assets/img/logo_bg_removed.png" alt="img" style="width: 105px;">
+                    </a>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <div class="mean__menu-wrapper">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li class="has-dropdown menu-thumb">
+                                            <a href="index.html">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="has-dropdown active d-xl-none">
+                                            <a href="index.html" class="border-none">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">
+                                                About Us
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                Services
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="BCI_Contructions.html">BCI Construction</a></li>
+                                                <li><a href="BCI_agri_trading.html">BCI Agriculture & Trading</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="gallery.html">
+                                                Gallery
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Bulk_trading.html">
+                                                Bulk Trading
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">
+                                                Contact Us
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="theme-btn">
+                            Let’s Talk
+                            <i class="far fa-arrow-right"></i>
+                        </a>
+                        <div class="header__hamburger my-auto">
+                            <div class="sidebar__toggle">
+                                <div class="header-bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Section Start -->
+    <section class="breadcrumb-wrapper bg-cover fix"
+        style="background-image: url(assets/img/inner-page/breadcroumb.jpg);">
+        <div class="shape-1 float-bob-y">
+            <img src="assets/img/inner-page/shape-1.png" alt="img">
+        </div>
+        <div class="shape-2 float-bob-x">
+            <img src="assets/img/inner-page/shape-2.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="page-heading">
+                <ul class="breadcrumb-list wow fadeInUp">
+                    <li>Home</li>
+                    <li>//</li>
+                    <li>Bulk Enquiry</li>
+                </ul>
+                <h1 class="breadcrumb-title text-anim">Bulk & Wholesale Enquiry</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk enquary Section Start -->
+    <section class="gallery-section section-padding section-bg mt-5">
+
+        <div class="container">
+            <div class="section-title text-center">
+                <!-- <span class="wow fadeInUp"><img src="assets/img/sub-title.svg" alt="img">Tell Us Your Requirement. We'll Help You Source & Supply.</span> -->
+                <h2 class="text-anim">Tell Us Your Requirement.</h2>
+                <!-- <p>Looking for reliable bulk supply of rice and other agricultural products? Share your product requirements, quantity, packaging, delivery location and business details with our team. We will review your enquiry and get back to you with suitable commercial options.</p> -->
+            </div>
+
+            <blockquote class="wow fadeInUp" data-wow-delay=".7s">
+                <p style="font-size: 20px;"> <b>Reliable Supply. Competitive B2B Solutions.</b>
+                    <br>Whether you are a wholesaler, distributor, retailer, institutional buyer, hotel, restaurant,
+                    caterer or trading company, BCI welcomes enquiries for bulk and regular agricultural product
+                    requirements.
+                    We can discuss product availability, quantity, pack size, MOQ, pricing, delivery location, packaging
+                    and commercial terms based on your requirements. <br>
+
+                    <br><b>Who Can Enquire?</b> <br>
+                    Business Enquiries Welcome | Wholesalers | Distributors | Retailers & Supermarkets | Hotels & Restaurants | Caterers | Institutional Buyers | Trading Companies | Regional Stockists <br> <br>
+                    <b>Whether you need a one-time bulk order or regular monthly supply, share your requirement with our team.</b>
+                </p>
+            </blockquote>
+
+            <div class="contact-wrapper">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-12">
+                        <div class="contact-content">
+                            <!-- <div class="section-title mb-0">
+                                    <span class="wow fadeInUp"><img src="assets/img/sub-title.svg" alt="img">Contact With Us</span>
+                                    <h2>Contact Us for Organic <br> and Natural Products</h2>
+                                </div> -->
+                            <form action="#" id="contact-form" class="contact-form-box">
+                                <div class="row g-4 align-items-center justify-content-center">
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                        <div class="form-clt">
+                                            <input type="text" name="name" id="name" placeholder="Enter Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                        <div class="form-clt">
+                                            <input type="text" name="company-name" id="company-name"
+                                                placeholder="Enter Company Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                        <div class="form-clt">
+                                            <!-- <input type="" name="phone" id="phone" placeholder="Business Type"> -->
+                                            <select name="business_type" id="business_type" class="single-select">
+                                                <option value="" selected disabled>Business Type</option>
+                                                <option value="Wholesaler">Wholesaler</option>
+                                                <option value="Distributor">Distributor</option>
+                                                <option value="Retailer">Retailer</option>
+                                                <option value="Supermarket">Supermarket</option>
+                                                <option value="Hotel / Restaurant">Hotel / Restaurant</option>
+                                                <option value="Caterer">Caterer</option>
+                                                <option value="Institutional Buyer">Institutional Buyer</option>
+                                                <option value="Trading Company">Trading Company</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="form-clt">
+                                            <input type="number" name="subject" id="mobile-whatsapp"
+                                                placeholder="Mobile / WhatsApp">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="form-clt">
+                                            <input type="email" name="email" id="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="form-clt">
+                                            <input type="text" name="required-quantity" id="required-quantity"
+                                                placeholder="Required Quantity">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="form-clt">
+                                            <input type="text" name="pack-size" id="pack-size"
+                                                placeholder="Required Pack Size">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="form-clt">
+                                            <input type="text" name="delivery-location" id="delivery-location"
+                                                placeholder="Delivery Location [City / District / State]">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="form-clt">
+                                            <input type="text" name="monthly-requirements" id="monthly-requirements"
+                                                placeholder="Monthly Requirement">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".8s">
+                                        <div class="form-clt">
+                                            <textarea name="text" id="message" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-3 wow fadeInUp" data-wow-delay=".9s">
+                                        <div class="contact-button">
+                                            <button type="submit" class="theme-btn" style="background-color: #47c363;">
+                                                ENQUIRE ON WHATSAPP
+                                                <i class="far fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 wow fadeInUp" data-wow-delay=".9s">
+                                        <div class="contact-button">
+                                            <button type="submit" class="theme-btn">
+                                                GET BULK PRICE QUOTATION
+                                                <i class="far fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6">
+                            <div class="contact-image">
+                                <img src="assets/img/inner-page/contact-image.jpg" alt="img">
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Contact Section Start -->
+    <section class="contact-info-section section-padding fix">
+        <div class="container">
+            <div class="row g-4 ">
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="contact-info-box">
+                        <div class="shape-1">
+                            <img src="assets/img/inner-page/contact-shape.png" alt="img">
+                        </div>
+                        <div class="contact-top">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Mail us 24/7</h3>
+                        </div>
+                        <p>
+                            <a href="mailto:info@wbcagro.com">info@wbcagro.com</a>
+                        </p>
+                        <!-- <p>
+                                <a href="supportagron@gmail.com">supportagron@gmail.com</a>
+                            </p> -->
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="contact-info-box">
+                        <div class="shape-1">
+                            <img src="assets/img/inner-page/contact-shape.png" alt="img">
+                        </div>
+                        <div class="contact-top">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Call Us Anytime</h3>
+                        </div>
+                        <p>
+                            <a href="tel:+917578059104">Phone : +91 75780 59104</a>
+                        </p>
+                        <!-- <p>
+                                <a href="tel:+69009494094">Mobile : (+01) 647 - 448 - 3065</a>
+                            </p> -->
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="contact-info-box">
+                        <div class="shape-1">
+                            <img src="assets/img/inner-page/contact-shape.png" alt="img">
+                        </div>
+                        <div class="contact-top">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Our Location</h3>
+                        </div>
+                        <p>
+                            Rajarhat–700157, West Bengal, India
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="contact-info-box">
+                        <div class="shape-1">
+                            <img src="assets/img/inner-page/contact-shape.png" alt="img">
+                        </div>
+                        <div class="contact-top">
+                            <div class="icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h3>Our GST</h3>
+                        </div>
+                        <p>
+                            XXXXX-XXXXX-XXXX90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="contact-info-box">
+                        <div class="shape-1">
+                            <img src="assets/img/inner-page/contact-shape.png" alt="img">
+                        </div>
+                        <div class="contact-top">
+                            <div class="icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Our FSSAI license</h3>
+                        </div>
+                        <p>
+                            980-XXXX-5X5
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section Start -->
+    <div class="gallery-section-4 section-padding fix pt-0 section-bg">
+        <div class="swiper gallery-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-01.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-02.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-03.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-04.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-05.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-image-4">
+                        <img src="assets/img/home-4/gallery/gallery-06.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section style-2 section-padding bg-cover pb-0 mt-1"
+        style="background-image: url('assets/img/home-1/footer-bg.jpg');">
+        <div class="container">
+
+            <div class="footer-widget-wrapper">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-7 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="footer-widget-items">
+                            <div class="widget-head">
+                                <h5>Contact Us</h5>
+                            </div>
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Email us:</h5>
+                                        <p><a href="mailto:info@wbcagro.com">info@wbcagro.com</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Location:</h5>
+                                        <p>Rajarhat–700157, West Bengal, India</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Phone:</h5>
+                                        <p><a href="tel:+917578059104">+91 75780 59104</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-5 col-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="footer-widget-items">
+                            <div class="widget-head">
+                                <h5>
+                                    Useful Link
+                                </h5>
+                            </div>
+                            <ul class="list-area">
+                                <li>
+                                    <a href="about.html">
+                                        <i class="far fa-chevron-double-right"></i> About Company
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html">
+                                        <i class="far fa-chevron-double-right"></i> Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <i class="far fa-chevron-double-right"></i> 24/7 Support
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 col-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="footer-widget-items">
+                            <div class="widget-head">
+                                <h5>
+                                    Our Services
+                                </h5>
+                            </div>
+                            <ul class="list-area">
+                                <li>
+                                    <a href="service-details.html">
+                                        <i class="far fa-chevron-double-right"></i> BCI Construction
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">
+                                        <i class="far fa-chevron-double-right"></i> BCI Agricultural & Trading
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="service-details.html">
+                                        <i class="far fa-chevron-double-right"></i> Pond & Sea Fish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">
+                                        <i class="far fa-chevron-double-right"></i> Cow Milk & Meat
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">
+                                        <i class="far fa-chevron-double-right"></i> Modern Equipment
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">
+                                        <i class="far fa-chevron-double-right"></i> Eggs & Meat
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="footer-widget-items">
+                            <div class="widget-head">
+                                <h5>
+                                    Our Gallery
+                                </h5>
+                            </div>
+                            <ul class="recent-post">
+                                <li>
+                                    <div class="thumb">
+                                        <img src="assets/img/home-1/footer-post-1.jpg" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <!-- <p>12 January, 2025</p> -->
+                                        <!-- <h4><a href="news-details.html">Holistic Healing: Exploring Health Coaching
+                                                Techniques</a></h4> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb">
+                                        <img src="assets/img/home-1/footer-post-2.jpg" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <!-- <p>09 May, 2025</p>
+                                        <h4><a href="news-details.html">How Can You Growing Your Agriculture
+                                                Products</a></h4> -->
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <p class="text-1 wow fadeInUp">© 2026 BCI. All Rights Reserved</p>
+                    <div class="social-icon wow fadeInUp" data-wow-delay=".2s">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="bottom-img wow fadeInUp" data-wow-delay=".4s">
+                        <img src="assets/img/home-1/footer-bottom.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Odometer Js >>-->
+    <script src="assets/js/odometer.min.js"></script>
+    <!--<< Appear Js >>-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Gsap Animation Js >>-->
+    <script src="assets/js/gsap.min.js"></script>
+    <!--<< ScrollTrigger Js >>-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--<< SplitText Js >>-->
+    <script src="assets/js/SplitText.min.js"></script>
+    <!--<< splitType Js >>-->
+    <script src="assets/js/splitType.js"></script>
+    <!--<< Ajax Mail.js >>-->
+    <script src="assets/js/ajax-mail.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
