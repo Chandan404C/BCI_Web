@@ -30,9 +30,9 @@
 
     <meta property="og:site_name" content="Build Const Industries & Agro Pvt. Ltd.">
 
-    
+    {% if product.image %}
     <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ product.image.url }}">
- 
+    {% endif %}
 
 
     <!-- ======== Page title ============ -->
