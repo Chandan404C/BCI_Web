@@ -398,44 +398,93 @@
                                     <span class="wow fadeInUp"><img src="assets/img/sub-title.svg" alt="img">Contact With Us</span>
                                     <h2>Contact Us for any kind of quary</h2>
                                 </div>
-                                <form action="#" id="contact-form" class="contact-form-box">
-                                    <div class="row g-4 align-items-center justify-content-center">
-                                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                            <div class="form-clt">
-                                                <input type="text" name="name" id="name" placeholder="Enter Your Name">
-                                            </div>
+                                <form id="contactForm" class="contact-form-box" action="@Url.Action("Submit", "Contact")">
+    <div class="row g-4 align-items-center justify-content-center">
+        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+            <div class="form-clt">
+                <input type="text" name="Name" id="name" placeholder="Enter Your Name">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+            <div class="form-clt">
+                <input type="text" name="CompanyName" id="companyName" placeholder="Enter Company Name">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+            <div class="form-clt">
+                <input type="text" name="Email" id="email" placeholder="Enter Your Email">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+            <div class="form-clt">
+                <input type="text" name="Mobile" id="mobile" placeholder="Enter Your Phone Number" required>
+            </div>
+        </div>
+
+        
+
+        <!-- <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+            <div class="form-clt">
+               
+                <select name="EnquiryType" id="enquiryType" class="single-select">
+                    <option value="" selected disabled>Inquiry Type</option>
+
+                    <option value="Construction">Construction</option>
+
+                    <option value="Products">Agro Products</option>
+                </select>
+            </div>
+        </div> -->
+
+        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                        <div class="form-clt">
+                                            <!-- <input type="" name="phone" id="phone" placeholder="Business Type"> -->
+                                            <select name="EnquiryType" id="enquiryType" class="single-select">
+                                                <option value="" selected disabled>Inquiry Type</option>
+
+                                                <option value="Construction">Construction</option>
+
+                                                <option value="Products">Agro Products</option>
+                                            </select>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                            <div class="form-clt">
-                                                <input type="text" name="email" id="email2" placeholder="Enter Your Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                                            <div class="form-clt">
-                                                <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number">
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".7s">
-                                            <div class="form-clt">
-                                                <input type="text" name="subject" id="subject2" placeholder="Your subject">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".8s">
-                                            <div class="form-clt">
-                                                <textarea name="message" id="message" placeholder="Write a message..."></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".9s">
-                                            <div class="contact-button">
-                                                <button type="submit" class="theme-btn">
-                                                Send Your Message
-                                                    <i class="far fa-arrow-right"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+          </div>
+    
+
+
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="form-clt">
+                <input type="text" name="ProductServiceRequired" id="productServiceRequired" placeholder="Product/Services">
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="form-clt">
+                <input type="text" name="QuantityProjectSize" id="quantityProjectSize" placeholder="Required Quantity/Size">
+            </div>
+        </div>
+
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="form-clt">
+                <input type="text" name="Location" id="location" placeholder="Location">
+            </div>
+        </div>
+
+        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".8s">
+            <div class="form-clt">
+                <textarea name="Message" id="message" placeholder="Write a message..."></textarea>
+            </div>
+        </div>
+        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".9s">
+            <div class="contact-button">
+                <button type="submit" class="theme-btn">
+                    Send Your Message
+                    <i class="far fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
                             </div>
                         </div>
                         <!-- <div class="col-lg-6">
